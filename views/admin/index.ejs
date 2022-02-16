@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="/css/bootstrap.min.css">
+	 <link rel="stylesheet" type="text/css" href="/css/admin.css">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+		
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle navbar-toggle-sidebar collapsed">
+			MENU
+			</button>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="http:/admin">
+				Administrator
+			</a>
+		</div>
+
+		
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="/home" target="_blank">Visit Site</a></li>
+				 <li><a href="<%= session.home.login %>"><i class="glyphicon glyphicon-user" aria-hidden="true"></i> <%= session.home.user %></a></li>
+				 <li><a href="http:/login/changepass"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> change password</a></li>
+				 <li><a href="http:/remove/logout"><i class="glyphicon glyphicon-log-out" aria-hidden="true"></i> logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>  	
+  		
+	<nav class="navbar navbar-default">
+		<div class="container">
+	  
+			
+		 
+		  <div class="navbar-header">
+				 <h2>Add New Product</h2>	
+				 <td><a href="/admin/addcpu" class="btn btn-primary" role="button">Processors</a></td>
+				 <td><a href="/admin/addmtb" class="btn btn-primary" role="button">Motherboard</a></td>
+				 <td><a href="/admin/addstore" class="btn btn-primary" role="button">Storage</a></td>
+				 <td><a href="/admin/addmem" class="btn btn-primary" role="button">Memories</a></td>
+				 <td><a href="/admin/addgpu" class="btn btn-primary" role="button">Videocards</a></td>
+				 <td><a href="/admin/addpsu" class="btn btn-primary" role="button">Powersupplies</a></td>
+				 <td><a href="/admin/addspk" class="btn btn-primary" role="button">Speakers</a></td>
+				 <td><a href="/admin/addod" class="btn btn-primary" role="button">Opticaldrives</a></td>
+				 <td><a href="/admin/addmoni" class="btn btn-primary" role="button">Monitors</a></td>
+				 <td><a href="/admin/addcase" class="btn btn-primary" role="button">Cases</a></td>
+				 <td><a href="/admin/addcf" class="btn btn-primary" role="button">Casefans</a></td>
+				 <td><a href="/admin/addmic" class="btn btn-primary" role="button">Mouse</a></td>
+				 <td><a href="/admin/addkb" class="btn btn-primary" role="button">Keyboards</a></td>
+				 <!--<h2>Line2</h2>	
+				 <td><a href="" class="btn btn-primary" role="button">1</a></td>
+				 <td><a href="" class="btn btn-primary" role="button">2</a></td> -->
+			  </div>
+			  
+				
+			  
+			  
+		  </div>
+				
+			
+		
+	
+  		
+
+  		
+  		<footer class="pull-left footer">
+  			<p class="col-md-12">
+  				<hr class="divider">
+  				Copyright &COPY; 2017 <a href="">ATP3</a>
+  			</p>
+  		</footer>
+  	</div>
+</body>
+</html>
